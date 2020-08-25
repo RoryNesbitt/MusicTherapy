@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Music Therapy</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_controls">Controls</string>
+    <string name="header_home">Welcome to your personal musical therapist</string>
+    <string name="header_dashboard">Current mood readings</string>
+    <string name="header_controls">Controls</string>
+    <string name="stats_default">Heart rate: Checking..\nBlood pressure: Checking..\nTemperature: Checking..\nHealth status: Normal</string>
+    <string name="status_default">Disconnected</string>
+</resources>

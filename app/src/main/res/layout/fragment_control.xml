@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.ControlFragment">
+
+    <TextView
+        android:id="@+id/text_controls"
+        android:layout_width="311dp"
+        android:layout_height="247dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:lines="5"
+        android:text="@string/title_controls"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/stop"
+        android:layout_width="126dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="64dp"
+        android:background="@android:drawable/ic_lock_silent_mode"
+        app:layout_constraintBottom_toBottomOf="@+id/skip"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/skip"
+        android:layout_width="135dp"
+        android:layout_height="138dp"
+        android:layout_marginBottom="128dp"
+        android:background="@android:drawable/ic_media_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/stop" />
+
+    <TextView
+        android:id="@+id/test"
+        android:visibility="gone"
+        android:layout_width="331dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_controls" />
+
+    <Spinner
+        android:id="@+id/spinnerType"
+        android:layout_width="311dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_controls"
+        />
+
+    <Switch
+        android:id="@+id/shuffle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Shuffle"
+        android:textColor="@color/colorText"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/skip"
+        app:layout_constraintTop_toBottomOf="@+id/stop" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
