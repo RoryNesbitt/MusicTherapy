@@ -12,3 +12,7 @@ This will also display the name of the MP3 file though to correctly display the 
 As as example here is the directory structure I use:
 
 [![Directory Structure](https://i.imgur.com/sIY5Jm3.png)]()
+
+Each of the numbered directories have a .gitkeep file. This is to maintain this structure for github thought he type files within them can be changed so do not have this.
+
+It is important that every directory gets at least one subdirectory and .mp3 file as the app will crash if it tries to play with no music availible.
